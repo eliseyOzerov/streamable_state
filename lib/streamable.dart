@@ -2,16 +2,16 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-part 'streamed.dart';
 part 'extensions/double_extension.dart';
 part 'extensions/int_extension.dart';
 part 'extensions/list_extension.dart';
 part 'extensions/map_extension.dart';
 part 'extensions/string_extension.dart';
+part 'streamed.dart';
 
 /// The class representing a streamed value
 class Streamable<T> {
-  /// Classes containing this object need to implement [Forgettable]
+  /// Default constructor
   Streamable(T defaultValue) {
     value = defaultValue;
   }

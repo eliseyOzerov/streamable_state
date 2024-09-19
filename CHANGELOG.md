@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.0
+
+24.07.2024
+
+* Updated sdk constraints
+
 ## 0.0.3
 
 23.05.2022

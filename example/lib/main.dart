@@ -32,9 +32,7 @@ class _MyAppState extends State<MyApp> {
                   TextButton(
                     onPressed: controller.add,
                     style: ButtonStyle(
-                      padding: MaterialStateProperty.resolveWith(
-                        (states) => const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-                      ),
+                      padding: WidgetStateProperty.resolveWith((states) => const EdgeInsets.symmetric(horizontal: 30, vertical: 10)),
                     ),
                     child: const Text("add"),
                   ),
@@ -52,9 +50,7 @@ class _MyAppState extends State<MyApp> {
                   TextButton(
                     onPressed: controller.subtract,
                     style: ButtonStyle(
-                      padding: MaterialStateProperty.resolveWith(
-                        (states) => const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-                      ),
+                      padding: WidgetStateProperty.resolveWith((states) => const EdgeInsets.symmetric(horizontal: 30, vertical: 10)),
                     ),
                     child: const Text("sub"),
                   ),
@@ -69,18 +65,14 @@ class _MyAppState extends State<MyApp> {
                       TextButton(
                         onPressed: controller.loop,
                         style: ButtonStyle(
-                          padding: MaterialStateProperty.resolveWith(
-                            (states) => const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-                          ),
+                          padding: WidgetStateProperty.resolveWith((states) => const EdgeInsets.symmetric(horizontal: 30, vertical: 10)),
                         ),
                         child: const Text("loop"),
                       ),
                       TextButton(
                         onPressed: controller.stop,
                         style: ButtonStyle(
-                          padding: MaterialStateProperty.resolveWith(
-                            (states) => const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-                          ),
+                          padding: WidgetStateProperty.resolveWith((states) => const EdgeInsets.symmetric(horizontal: 30, vertical: 10)),
                         ),
                         child: const Text("stop"),
                       ),
